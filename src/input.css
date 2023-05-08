@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    .container{
+        width: 100%;
+        margin:  0 auto;
+        padding: 0 3rem;
+    }
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+    }
+
+    @layer components{
+        
+        .burger_btn{
+            trasnsition: .8s ease;
+        }
+
+        .burger_btn span{
+            height: .2rem;
+            width: 1.4rem;
+            background-color: white;
+            display: block; 
+            trasnsition: .8s ease;
+        }
+
+        .burger_btn.open span:nth-child(1){
+            @apply translate-x-0 translate-y-[10px] rotate-[225deg] ease-out duration-[.8s];
+        }
+
+        .burger_btn span:nth-child(2){
+           margin: .2rem 0;
+        }
+
+        .burger_btn.open span:nth-child(2){
+            @apply opacity-0
+         }
+        
+
+        .burger_btn.open span:nth-child(3){
+            @apply translate-x-0 translate-y-[-4px] rotate-[-225deg] ease-out duration-[.8s];
+        } 
+
+        nav{
+            @apply ease-out duration-[.6s] top-[5rem] bg-[#050505] p-2 rounded-[.5rem] 
+        }
+
+        nav ul li a {
+            @apply text-white text-[.8rem] flex flex-col place-items-center
+        }
+
+        nav ul li a i {
+            @apply p-[.9rem] rounded-[50%] text-[1.2rem]
+        }
+        nav.open{
+            @apply  block ease-in duration-[.6s] right-[1.2rem]
+        }
+
+
+        ul li {
+            @apply flex flex-col place-items-center
+        }
+
+        ul li i {
+            @apply bg-white 
+        }
+
+        .banner-icons ul a i{
+            @apply text-black mb-5 outline-[black]
+        }
+        
+        .banner{
+            background: rgb(255,215,0);
+            background: linear-gradient(30deg, rgba(255,215,0,1) -10%, rgba(0,0,0,1) 40%);
+        }
+
+        .btn{
+            @apply bg-white inline-block p-2 pl-10 pr-10 rounded-[5rem]
+        }
+
+        .tns-outer button, [role='stop']{
+            @apply hidden
+        }
+
+        .card{
+            background: rgb(255,215,0);
+            background: linear-gradient(30deg, rgba(255,215,0,1) -100%, rgba(0,0,0,1) 60%);
+        }
+
+        .card{
+            @apply rounded-[.5rem] p-[1rem]
+        }
+        .mini-card{
+            @apply bg-white flex place-content-center rounded-[.4rem] p-4
+        }
+
+        form{
+            @apply mt-6
+        }
+
+        form input{
+            @apply  w-[100%] p-2  stroke-[A5A5A5] drop-shadow-lg outline-none
+        }   
+       
+        form input:nth-child(2){
+            @apply mt-5 mb-5
+        }
+
+        .contact .btn {
+            background: rgb(255,215,0);
+            background: linear-gradient(80deg, rgba(255,215,0,1) 0%, rgba(0,0,0,1) 90%);
+        }
+        .contact .btn{
+            @apply  pl-3 pr-3 text-white mt-5 relative right-[-18rem]
+        }
+    }
