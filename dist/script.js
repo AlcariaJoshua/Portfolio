@@ -14,7 +14,15 @@ burger_btn.addEventListener('click', () => {
     slideBy: 'page',
     autoplay: true,
     controls: false,
-    gutter: 16
+    gutter: 16,
+    responsive:{
+        990:{
+            items: 4,
+            autoplay: false,
+            
+        }
+    }
+    
   });
 
   //slider projects
@@ -23,5 +31,12 @@ burger_btn.addEventListener('click', () => {
     items: 1,
     slideBy: 'page',
     autoplay: true,
-    controls: false
+    controls: false,
+    responsive:{
+        990:{
+            items: 1,
+       
+            
+        }
+    }
   });

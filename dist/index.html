@@ -13,62 +13,65 @@
 <body>
 
         <header class="fixed top-0 bg-black pt-5 pb-5 w-[100%] z-[999]">
-                <div class="container flex justify-between place-items-center ">
-                    <div class="branding flex place-items-center gap-2">
+                <div class="container flex justify-between place-items-center">
+                    <div class="branding">
+                       <a href="#banner" class="flex place-items-center gap-2">
                         <img src="./img/logo.png" alt="">
                         <p class="text-white text-[.8rem]">Joshua Alcaria</p>
+                       </a> 
                     </div>
                     <div class="burger_btn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
-                <nav class="absolute right-[-12rem]">   
-                    <ul class="flex flex-col gap-5">
-                        <li>
+                    <nav class="absolute right-[-12rem] lg:flex lg:top-4 lg:right-[13.5rem] ">   
+                        <ul class="flex flex-col gap-5 lg:flex-row">
+                            <li>
+                                
+                                <a href="#banner">
+                                    <i class="fa-solid fa-house text-[black]"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                               
+                              
+                                <a href="#about">
+                                    <i class="fa-solid fa-user text-[black]"></i>
+                                    About me
+                                </a>
+                            </li>
+                            <li>
                             
-                            <a href="#banner">
-                                <i class="fa-solid fa-house text-[black]"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                           
-                          
-                            <a href="#about">
-                                <i class="fa-solid fa-user text-[black]"></i>
-                                About me
-                            </a>
-                        </li>
-                        <li>
-                        
-                           
-                            <a href="#service">
-                                <i class="fa-solid fa-hand-holding-dollar text-[black]"></i>
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                          
-                           
-                            <a href="#contact">
-                                <i class="fa-solid fa-phone text-[black]"></i>
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                               
+                                <a href="#service">
+                                    <i class="fa-solid fa-hand-holding-dollar text-[black]"></i>
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                              
+                               
+                                <a href="#contact">
+                                    <i class="fa-solid fa-phone text-[black]"></i>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+               
         </header>
 
-        <section id="banner" class="banner bg-black mt-[3rem]">
-            <div class="container">
-                <div class="img_container  flex flex-col items-center">
-                    <img src="./img/picture-removebg-preview.png" alt="" class="w-[auto] h-[400px] brightness-100">
+        <section id="banner" class="banner bg-black mt-[3rem] ">
+            <div class="container lg:grid lg:grid-cols-2 lg:place-items-center">
+                <div class="img_container  flex flex-col items-center lg:order-2">
+                    <img src="./img/picture-removebg-preview.png" alt="" class="w-[auto] h-[400px] lg:w-[526px] lg:h-[680px]">
                 </div>
-                <div class="banner-text text-center ">
-                    <h4 class="text-[white] text-[1.1rem] font-[700] pt-5 pb-5">Web Designer & Junior Web Developer</h4>
-                    <p class="text-[white] text-[.8rem] font-[250] leading-relaxed tracking-wide">Web designing conferences are fantastic for keeping up to date
+                <div class="banner-text text-center lg:order-1 lg:text-left">
+                    <h4 class="text-[white] text-[1.1rem] font-[700] pt-5 pb-5 lg:text-[3.5rem]">Web Designer & Junior Web Developer</h4>
+                    <p class="text-[white] text-[.8rem] font-[250] leading-relaxed tracking-wide lg:text-[1rem]">Web designing conferences are fantastic for keeping up to date
                         with the industry changes and for gaining useful advice from
                         big name contributors.
                     </p>
@@ -76,7 +79,7 @@
                         <a href="#project" class="font-[600] text-[1rem]">Projects</a>
                     </div>
                     <div class="banner-icons ">
-                        <ul class="flex gap-5 justify-center text-[1.5rem]">
+                        <ul class="flex gap-5 justify-center text-[1.5rem] lg:justify-start">
                             <a href=""><i class="fa-solid fa-envelope"></i></a>
                             <a href=""><i class="fa-brands fa-github"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -92,111 +95,125 @@
 
         <section  id="about" class="about mt-10" >
             <div class="container">
-                <div class="img-container">
-                    <img src="./img/IMG_0417.JPG" alt="">
+                <div class="about-container lg:flex lg:gap-10">
+                    <div class="img-container ">
+                        <img src="./img/IMG_0417.JPG" alt="" class="lg:w-[180rem] lg:h-[30rem]">
+                    </div>
+                    <div class="about-text ">
+                        <h4 class="pt-3 pb-3 text-[1.2rem] font-[700] lg:text-[3rem]">About me</h4>
+                            <p class="text-[.8rem] font-[400] leading-relaxed indent-8 text-justify tracking-wide lg:text-[1rem]">
+                                I am Joshua Alcaria a fresh graduate at Laguna State Polytechnic University - SPCC a Web Designer and Web Developer which focus on designing a website that are friendly user and have aesthetic style for modern web. Im also a Web Developer who convert every design into code.
+                            </p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h4 class="pt-3 pb-3 text-[1.2rem] font-[700]">About me</h4>
-                        <p class="text-[.8rem] font-[400] leading-relaxed indent-8 text-justify tracking-wide">
-                            I am Joshua Alcaria a fresh graduate at Laguna State Polytechnic University - SPCC a Web Designer and Web Developer which focus on designing a website that are friendly user and have aesthetic style for modern web. Im also a Web Developer who convert every design into code.
-                        </p>
-                </div>
-                <div class="">
-                    <h4 class="pt-3 pb-3 text-[1.2rem] font-[700]">My Interest</h4>
+                
+                
+                    <h4 class="pt-3 pb-3 text-[1.2rem] font-[700] lg:text-[3rem]">My Interest</h4>
                         <div class="slider">
                             <div><img src="./img/Property 1=Default.png" alt=""></div>
                             <div><img src="./img/Property 1=Default (1).png" alt=""></div>
                             <div><img src="./img/Property 1=Default (2).png" alt=""></div>
                             <div><img src="./img/Property 1=Default (3).png" alt=""></div>
                         </div>
-                </div>
+              
             </div>
         </section>
 
-        <section id="service" class="services mt-10 pb-10 bg-[#050505] text-white">
+        <section id="service" class="services mt-10 pb-10 bg-[#050505] text-white lg:pb-[0]">
             <div class="container">
-                <div class="card-container mt-6">
-                    <h4 class="text-[1.2rem] font-[700] pb-3 pt-3">Services</h4>
-                        <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide">
+                <div class="card-container mt-6 lg:grid lg:grid-cols-2 lg:pt-[5rem]">
+                    <div class="card-text">
+                        <h4 class="text-[1.2rem] font-[700] pb-3 pt-3 lg:text-[3rem]">Services</h4>
+                        <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide
+                        lg:text-[1rem]">
                             Here’s is my service’s that I can do, my <br>
                             skills and experience.
                         </p>
-                    <div class="card mt-5">
-                        <div class="card-header flex justify-between">
-                            <div class="title">
-                                <h5 class="font-[750]">UI/UX Design</h5>
-                                <span class="text-[.7rem]">Experience Figma designer</span>
-                            </div>
-                            <div class="logo">
-                                <img src="./img/SVGRepo_iconCarrier.png" alt="">
-                            </div>
-                        </div>
-                        <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide pt-4 pb-4">
-                            Experience is one that seamlessly blends form and function to create a delightful and intuitive interaction between users and technology.
-                        </p>
-                        <div class="price">
-                            <p class="font-[600]">$5 Dollar</p>
-                        </div>
                     </div>
-                    <div class="card mt-5">
-                        <div class="card-header flex justify-between">
-                            <div class="title">
-                                <h5 class="font-[750]">Web Development</h5>
-                                <span class="text-[.7rem]">Experience Web Developer</span>
+                  
+                        <div class="card-row lg:grid lg:grid-cols-2 lg:gap-5">
+                            <div class="card mt-5">
+                                <div class="card-header flex justify-between">
+                                    <div class="title">
+                                        <h5 class="font-[750]">UI/UX Design</h5>
+                                        <span class="text-[.7rem]">Experience Figma designer</span>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="./img/SVGRepo_iconCarrier.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide pt-4 pb-4">
+                                    Experience is one that seamlessly blends form and function to create a delightful and intuitive interaction between users and technology.
+                                </p>
+                                <div class="price">
+                                    <p class="font-[600]">$5 Dollar</p>
+                                </div>
                             </div>
-                            <div class="logo">
-                                <img src="./img/SVGRepo_iconCarrier (1).png" alt="">
+                            <div class="card mt-5">
+                                <div class="card-header flex justify-between">
+                                    <div class="title">
+                                        <h5 class="font-[750]">Web Development</h5>
+                                        <span class="text-[.7rem]">Experience Web Developer</span>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="./img/SVGRepo_iconCarrier (1).png" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide pt-4 pb-4">
+                                    As a web developer I am responsible for building responsive and user-friendly websites using various programming languages, frameworks, and libraries 
+                                </p>
+                                <div class="price">
+                                    <p class="font-[600]">$10 Dollar</p>
+                                </div>
+                            </div>
+                            <div class="card mt-5 lg:col-start-2 lg:mt-0">
+                                <div class="card-header flex justify-between">
+                                    <div class="title">
+                                        <h5 class="font-[750]">WordPress Development</h5>
+                                        <span class="text-[.7rem]">Experience Web Developer</span>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="./img/SVGRepo_iconCarrier (2).png" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide pt-4 pb-4">
+                                    A WordPress developer has experience in designing, developing, and maintaining websites using the WordPress platform and its related technologies.
+                                </p>
+                                <div class="price">
+                                    <p class="font-[600]">$20 Dollar</p>
+                                </div>
                             </div>
                         </div>
-                        <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide pt-4 pb-4">
-                            As a web developer I am responsible for building responsive and user-friendly websites using various programming languages, frameworks, and libraries 
-                        </p>
-                        <div class="price">
-                            <p class="font-[600]">$10 Dollar</p>
-                        </div>
-                    </div>
-                    <div class="card mt-5">
-                        <div class="card-header flex justify-between">
-                            <div class="title">
-                                <h5 class="font-[750]">WordPress Development</h5>
-                                <span class="text-[.7rem]">Experience Web Developer</span>
-                            </div>
-                            <div class="logo">
-                                <img src="./img/SVGRepo_iconCarrier (2).png" alt="">
-                            </div>
-                        </div>
-                        <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide pt-4 pb-4">
-                            A WordPress developer has experience in designing, developing, and maintaining websites using the WordPress platform and its related technologies.
-                        </p>
-                        <div class="price">
-                            <p class="font-[600]">$20 Dollar</p>
-                        </div>
-                    </div>
+                  
                 </div>
 
-                <div id="project" class="project-container mt-6">
-                    <div class="title">
-                        <h4 class="text-[1.2rem] font-[700] pb-3 pt-3">My Works</h4>
-                            <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide">Here’s is some  of my works that I’ve been <br>
-                                working for 6 months. </p>
+                <div id="project" class="project-container mt-6 lg:grid lg:grid-cols-2 lg:pt-[3rem] lg:pb-[6rem]">
+                    <div class="title lg:order-2 ">
+                        <h4 class="text-[1.2rem] font-[700] pb-3 pt-3 lg:text-[3rem] lg:text-right">My Works</h4>
+                            <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide lg:text-[1rem] lg:text-right">Here’s is some  of my works that I’ve been
+                                working  <br> for 6 months. 
+                                <a href="https://github.com/" class="italic underline hover:text-[#2f2fda]">Github projects</a>
+                            </p>
+                              
+                                  
                     </div> 
-                    <div class="project-slider mt-5">
-                        <div><img src="./img/cvd.png" alt=""></div>
+                    <div class="project-slider mt-5 lg:order-1 lg:flex lg:gap-8">
+                        <div><img src="./img/unnamed.png" alt=""></div>
                         <div><img src="./img/blog.png" alt=""></div>
                         <div><img src="./img/spotify.png" alt=""></div>
                         <div><img src="./img/wordtour.png" alt=""></div>
                     </div>
                 </div>
 
-                <div class="skill-container mt-6">
+                <div class="skill-container mt-6 lg:grid lg:grid-cols-2 lg:pb-[8rem]">
                     <div class="title">
-                        <h4 class="text-[1.2rem] font-[700] pb-3 pt-3">Services</h4>
-                            <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide">
+                        <h4 class="text-[1.2rem] font-[700] pb-3 pt-3 lg:text-[3rem]">Services</h4>
+                            <p class="text-[.8rem] font-[400] leading-relaxed text-justify tracking-wide lg:text-[1rem]">
                                 Here’s is my different skills that I’ve been using <br>
                                 to develop and design a web project’s.    
                             </p>
                     </div> 
-                    <div class="skills grid grid-cols-3 gap-4 mt-6">
+                    <div class="skills grid grid-cols-3 gap-4 mt-6 lg:justify-items-center lg:grid-cols-4">
                         <div class="mini-card">
                             <img src="./img/figma.png" alt="">
                         </div>
@@ -227,22 +244,25 @@
         </section>
 
         <section id="contact" class="contact mt-5 relative">
-            <div class="container">
-                <div class="title">
-                    <h3 class="text-[1.7rem]">GET IN TOUCH</h3>
-                    <p class="text-[.8rem]">GOOD DESIGN IS GOOD FOR BUSINESS</p>
-                </div>
-                <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="resize-none w-[100%] p-2
-                    stroke-[A5A5A5] drop-shadow-lg outline-none"></textarea>
-                </form>
-                <div class="btn">
-                    <a href="#">Send Message</a>
-                </div>
+            <div class="container lg:grid lg:grid-cols-2">
+               <div class="left-row">
+                    <div class="title">
+                        <h3 class="text-[1.7rem] lg:text-[3rem]">GET IN TOUCH</h3>
+                        <p class="text-[.8rem]">GOOD DESIGN IS GOOD FOR BUSINESS</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="resize-none w-[100%] p-2
+                        stroke-[A5A5A5] drop-shadow-lg outline-none"></textarea>
+                    </form>
+                    <div class="btn">
+                        <a href="#">Send Message</a>
+                    </div>
+               </div>
 
-                <div class="contact-info flex flex-col gap-5 mt-10">
+               <div class="right-row lg:flex lg:flex-col lg:gap-5 lg:place-content-center lg:place-items-center">
+                    <div class="contact-info flex flex-col gap-5 mt-10">
                         <div class="contact-row flex place-items-center gap-3 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                                 <p class="text-[.9rem]">+639150643989</p>
@@ -256,16 +276,18 @@
                                 <p class="text-[.9rem]">Brgy. Sta. Monica San Pablo City, Laguna</p>
                         </div>
 
-                </div>
+                    </div>
 
-                <div class="contact-icon mt-8">
-                    <ul class="flex gap-5 text-[1.3rem]">
-                        <a href=""><i class="fa-solid fa-envelope"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    </ul>
-                </div>
+                        <div class="contact-icon mt-8">
+                            <ul class="flex gap-5 text-[1.3rem]">
+                                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </ul>
+                        </div>
+               </div>
+               
             </div>
         </section>
 
