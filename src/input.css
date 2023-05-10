@@ -56,7 +56,7 @@
             @apply p-[.9rem] rounded-[50%] text-[1.2rem] lg:text-[.6rem] lg:p-[.6rem]
         }
         nav.open{
-            @apply  block ease-in duration-[.5s] right-[1.2rem]
+            @apply  block ease-in duration-[.5s] right-[1.2rem] rounded-[.5rem] pt-[1.3rem] pb-[1.3rem] pl-[.6rem] pr-[.6rem]
         }
 
 
@@ -109,12 +109,12 @@
             @apply mt-5 mb-5
         }
 
-        .contact .btn {
+        .contact .btn a {
             background: rgb(255,215,0);
             background: linear-gradient(80deg, rgba(255,215,0,1) 0%, rgba(0,0,0,1) 90%);
         }
-        .contact .btn{
-            @apply  pl-3 pr-3 text-white
+        .contact .btn a{
+            @apply  pt-2 pb-2 pr-5 pl-5 rounded-[2rem] text-white
         }
 
         .project-slider div img{
@@ -125,17 +125,25 @@
             background: rgb(255,215,0);
             background: linear-gradient(30deg, rgba(255,215,0,1) -100%, rgba(0,0,0,1) 60%);
             /* background: linear-gradient(-190deg, rgba(255,215,0,1) -50%, rgba(0,0,0,1) 60%); */
-            @apply lg:w-[7rem] 
+            @apply lg:w-[6.5rem] lg:h-[5.5rem] 
+        }
+
+        .mini-card img{
+            @apply w-[2.5rem] lg:w-[3rem]
         }
 
         .contact-row i{
-            @apply lg:text-[1.3rem]
+            @apply lg:text-[1.2rem]
         }
         .contact p{
-            @apply lg:text-[1.2rem]
+            @apply lg:text-[1rem]
         }
         .contact-row:nth-child(2){
             @apply lg:pt-[2rem] lg:pb-[2rem]
+        }
+
+        .contact-icon ul a{
+            @apply lg:text-[1.6rem] 
         }
         
        
